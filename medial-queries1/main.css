@@ -1,3 +1,52 @@
 body {
   background: blanchedalmond;
+  text-align: center;
 }
+
+.container{
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+  gap: 2%;
+  margin: 2%;
+}
+
+.column{
+  background-color: lightgrey;
+  flex:1;
+  padding: 1em 0;
+}
+
+.a{
+flex: 1;
+}
+
+.b{
+  flex: 6;
+}
+
+.b,.c{
+  padding: 4em 0;
+  }
+
+@media only screen and (max-width: 600px){
+  
+  .row{
+    flex-wrap: wrap;
+  }
+
+  .column{
+    flex-basis: 100%;
+  }
+
+  .b{
+    margin-bottom: 2%;
+  }
+
+  .c{
+    padding: 1em 0;
+  }
+}
+

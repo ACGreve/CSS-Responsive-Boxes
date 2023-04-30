@@ -1,3 +1,60 @@
 body {
   background: peachpuff;
 }
+
+.container{
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.main .row{
+  display: flex;
+  margin: 1em;
+}
+
+.main .column{
+  flex: 1;
+  background-color: lightgrey;
+}
+
+.rowa{
+  background-color: lightgrey;
+}
+
+.aside{
+  background-color: lightgrey;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+.container{
+  margin: auto;
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  margin: 1em;
+  gap: 1em;
+}
+
+.aside{
+  flex: .5;
+}
+
+.column{
+flex: 1;
+background-color: lightgrey;
+}
+
+.mainaside{
+  display: flex ;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+}
